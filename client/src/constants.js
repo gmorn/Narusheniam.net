@@ -1,3 +1,3 @@
 // потом переделаю в env
 
-export const hostName = 'http://localhost:8000/api'
+export const hostName = 'https://narusheniam-net.onrender.com/api'

@@ -6,11 +6,19 @@
 	flex-direction: column;
 	
 	& .top {
+		padding-top: 10px;
 		display: flex;
 		gap: 20px;
 		margin-bottom: 20px;
 		align-items: center;
 		position: relative;
+
+		.loader {
+			height: 19px;
+			width: 150px;
+			background: rgb(222, 222, 222);
+			border-radius: 8px;
+		}
 
 		& .menu {
 			position: absolute;
@@ -18,6 +26,25 @@
 			top: 5px;
 			display: flex;
 			gap: 20px;
+
+			.loader {
+				height: 30px;
+				width: 100px;
+				background: rgb(222, 222, 222);
+				border-radius: 8px;
+			}
+		}
+	}
+	.desc {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		.loader {
+			height: 30px;
+			width: 100%;
+			background: rgb(222, 222, 222);
+			border-radius: 8px;
+
 		}
 	}
 }
@@ -26,6 +53,7 @@
 	.admin-statement-item-container {
 		
 		& .top {
+
 			gap: 10px;
 			flex-direction: column;
 			align-items: start;
@@ -43,7 +71,7 @@
 			margin-bottom: 50px;
 			& .menu {
 				left: 0;
-				top: 87px;
+				top: 95px;
 			}
 		}
 	}

@@ -1,0 +1,30 @@
+.admin-page-switcher {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.admin-page-switcher-item {
+	font-size: 20px;
+	padding: 10px 20px;
+	cursor: pointer;
+
+	// &:hover {
+	// 	p {
+	// 		transition: 300ms;
+	// 		transform: scale(1.05);
+	// 	}
+	// }
+
+	&.active {
+		background: var(--color-accent);
+		color: var(--color-main);
+	}
+
+	&.product {
+		border-radius: 12px 0 0 12px;
+	}
+
+	&.order {
+		border-radius: 0 12px 12px 0;
+	}
+}

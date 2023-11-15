@@ -1,0 +1,16 @@
+.text-area-component {
+  height: 200px;
+  width: 400px;
+  resize: none;
+  font-size: 14px;
+  border: 2px solid var(--color-text);
+  border-radius: 8px;
+  padding: 10px;
+
+}
+
+@media (max-width: 500px) {
+  .text-area-component {
+    width: 300px;
+  }
+}

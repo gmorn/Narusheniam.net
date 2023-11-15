@@ -1,0 +1,50 @@
+$loadingSpinnerSize: 33px;
+
+@keyframes spinAnimation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.loading-spinner {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: $loadingSpinnerSize;
+	height: $loadingSpinnerSize;
+
+	svg {
+		&:first-child {
+			animation: spinAnimation 1s linear infinite;
+		}
+		position: absolute;
+	}
+}
+
+.loader-modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(255, 255, 255, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+
+	& .loader-modal-container {
+		width: 100px;
+		height: 100px;
+		display: flex;
+		background: var(--color-main);
+		justify-content: center;
+		align-items: center;
+		border-radius: 15px;
+		box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
+	}
+}

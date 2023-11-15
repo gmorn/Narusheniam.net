@@ -1,0 +1,16 @@
+.input-block-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 20px; 
+}
+
+.input-block-checkbox {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+
+  input {
+    transform: scale(1.2);
+  }
+}

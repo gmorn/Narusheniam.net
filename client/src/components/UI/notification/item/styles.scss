@@ -1,0 +1,18 @@
+.notification-item {
+  min-width: 300px;
+  padding: 13px;
+  border-radius: 12px;
+  color: var(--color-main);
+
+  &.green {
+    background: rgb(13, 150, 13);
+  }
+
+  &.yellow {
+    background: rgb(255, 255, 103);
+  }
+
+  &.red {
+    background: rgb(248, 45, 45);
+  }
+}
